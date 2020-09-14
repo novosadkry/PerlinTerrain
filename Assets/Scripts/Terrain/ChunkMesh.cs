@@ -74,10 +74,10 @@ public class ChunkMesh
     public static readonly int[,] cubeTriangles = new int[6, 6] {
         { 3, 7, 6, 3, 6, 2 }, // TOP
         { 0, 5, 4, 0, 1, 5 }, // BOTTOM
-        { 0, 4, 7, 3, 0, 7 }, // LEFT
-        { 1, 2, 5, 2, 6, 5 }, // RIGHT
-        { 4, 5, 7, 5, 6, 7 }, // FRONT
-        { 0, 3, 1, 3, 2, 1 }  // BACK
+        { 0, 4, 7, 0, 7, 3 }, // LEFT
+        { 5, 1, 2, 5, 2, 6 }, // RIGHT
+        { 1, 0, 3, 1, 3, 2 }, // FRONT
+        { 4, 5, 6, 4, 6, 7 }  // BACK
     };
 
     public static Vector2[] cubeUVs = new Vector2[6] {
@@ -94,7 +94,7 @@ public class ChunkMesh
         new Vector3(0, -1, 0),
         new Vector3(-1, 0, 0),
         new Vector3(1, 0, 0),
-        new Vector3(0, 0, 1),
-        new Vector3(0, 0, -1)
+        new Vector3(0, 0, -1),
+        new Vector3(0, 0, 1)
     };
 }
